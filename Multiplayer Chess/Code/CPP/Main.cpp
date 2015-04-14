@@ -155,7 +155,7 @@ void changeState()
 			break;
 
 		case STATE_SINGLEPLAYER:
-			currentState = new SinglePlayer(stateID);
+			currentState = new SinglePlayer();
 			break;
 		}
 

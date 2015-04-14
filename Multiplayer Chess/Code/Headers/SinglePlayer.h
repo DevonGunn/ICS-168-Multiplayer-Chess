@@ -11,7 +11,7 @@ class SinglePlayer :
 	public GameState
 {
 public:
-	SinglePlayer(int prevState = NULL);
+	SinglePlayer();
 
 	//Handles overworld events
 	void handleEvents();

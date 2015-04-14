@@ -15,6 +15,8 @@ ChessPlayer::ChessPlayer()
 		temp = new ChessPiece(tempColor);
 		pieces.push_back(temp);
 	}
+
+	playerNum++;
 }
 
 void ChessPlayer::render()

@@ -40,9 +40,9 @@ ChessPiece::ChessPiece(PlayerColor pColor)
 		else position.y = 75;
 
 		//handle determining what piece this is
-		if (numBlackPieces == (0 || 7)) pieceType = ROOK;
-		else if (numBlackPieces == (1 || 6)) pieceType = KNIGHT;
-		else if (numBlackPieces == (2 || 5)) pieceType = BISHOP;
+		if (numBlackPieces == 0 || numBlackPieces == 7) pieceType = ROOK;
+		else if (numBlackPieces == 1 || numBlackPieces == 6) pieceType = KNIGHT;
+		else if (numBlackPieces == 2 || numBlackPieces == 5) pieceType = BISHOP;
 		else if (numBlackPieces == 3) pieceType = QUEEN;
 		else if (numBlackPieces == 4) pieceType = KING;
 		else pieceType = PAWN;
@@ -55,15 +55,15 @@ ChessPiece::ChessPiece(PlayerColor pColor)
 		else position.y = 525;
 
 		if (numWhitePieces < 8) pieceType = PAWN;
-		else if (numWhitePieces == (8 || 15)) pieceType = ROOK;
-		else if (numWhitePieces == (9 || 14)) pieceType = KNIGHT;
-		else if (numWhitePieces == (10 || 13)) pieceType = BISHOP;
+		else if (numWhitePieces == 8 || numWhitePieces == 15) pieceType = ROOK;
+		else if (numWhitePieces == 9 || numWhitePieces == 14) pieceType = KNIGHT;
+		else if (numWhitePieces == 10 || numWhitePieces == 13) pieceType = BISHOP;
 		else if (numWhitePieces == 11) pieceType = QUEEN;
 		else pieceType = KING;
 	}
 
 	//set x and y positions for the clip in the sprite sheet
-	spriteSheetClip.x = 75 * pieceType;
+	spriteSheetClip.x = 100 * pieceType;
 	spriteSheetClip.y = (pColor == BLACK) ? 0 : 75;
 
 	//increment piece counter

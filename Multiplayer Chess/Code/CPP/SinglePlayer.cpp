@@ -1,6 +1,6 @@
 #include "SinglePlayer.h"
 
-SinglePlayer::SinglePlayer(int prevState)
+SinglePlayer::SinglePlayer()
 {
 	SDL_Surface *background = loadImage("Resources/Graphics/Backgrounds/chessBackground.png");
 
@@ -50,10 +50,6 @@ SinglePlayer::SinglePlayer(int prevState)
 	//set the size of the space for the chessboard and border area of the chessboard
 	chessboardSize = { 0, 0, 600, 600 };
 	backgroundSize = { 600, 0, 200, 600 };
-
-	//initialize our players
-	player1 = ChessPlayer();
-	//player2 = ChessPlayer();
 }
 
 void SinglePlayer::handleEvents()
@@ -94,7 +90,7 @@ void SinglePlayer::render()
 
 	//render player pieces
 	player1.render();
-	//player2.render();
+	player2.render();
 
 	if (paused)
 	{
