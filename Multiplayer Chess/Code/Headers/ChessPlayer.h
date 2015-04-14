@@ -10,6 +10,8 @@ class ChessPlayer
 public:
 	ChessPlayer();
 
+	void handleEvents();
+
 	void render();
 
 	~ChessPlayer();

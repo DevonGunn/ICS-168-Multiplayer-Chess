@@ -19,6 +19,14 @@ ChessPlayer::ChessPlayer()
 	playerNum++;
 }
 
+void ChessPlayer::handleEvents()
+{
+	for (unsigned int i = 0; i < pieces.size(); ++i)
+	{
+		pieces[i]->handleEvents();
+	}
+}
+
 void ChessPlayer::render()
 {
 	for (unsigned int i = 0; i < pieces.size(); ++i)

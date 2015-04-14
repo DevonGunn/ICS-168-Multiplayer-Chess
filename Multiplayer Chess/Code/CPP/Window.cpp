@@ -4,7 +4,7 @@
 Window::Window(int width, int height, SDL_Window *&mainScreen)
 {
 	//create screen at default width/height, default resizeable
-	mainScreen = SDL_CreateWindow("Alvena Publishing - Heroes of Alvena - Dev Build",
+	mainScreen = SDL_CreateWindow("Devon Gunn - Multiplayer Chess - Alpha Build",
 		SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
 		width, height, SDL_WINDOW_RESIZABLE | SDL_WINDOW_OPENGL);
 

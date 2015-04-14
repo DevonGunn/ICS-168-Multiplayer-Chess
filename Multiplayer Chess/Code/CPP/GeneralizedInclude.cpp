@@ -49,7 +49,7 @@ bool init()
 
 	//create screen
 	//mainWindow = new Window(SCREEN_WIDTH, SCREEN_HEIGHT, screen);
-	mainWindow = SDL_CreateWindow("Alvena Publishing - Heroes of Alvena - Dev Build",
+	mainWindow = SDL_CreateWindow("Devon Gunn - Multiplayer Chess - Alpha Build",
 		SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
 		SCREEN_WIDTH, SCREEN_HEIGHT, /*SDL_WINDOW_RESIZABLE | */SDL_WINDOW_OPENGL);
 	//error check screen

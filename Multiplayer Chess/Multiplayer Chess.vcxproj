@@ -81,7 +81,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Code\CPP\Camera.cpp" />
     <ClCompile Include="Code\CPP\ChessPiece.cpp" />
     <ClCompile Include="Code\CPP\ChessPlayer.cpp" />
     <ClCompile Include="Code\CPP\Credits.cpp" />
@@ -93,8 +92,6 @@
     <ClCompile Include="Code\CPP\MenuButton.cpp" />
     <ClCompile Include="Code\CPP\Options.cpp" />
     <ClCompile Include="Code\CPP\SinglePlayer.cpp" />
-    <ClCompile Include="Code\CPP\PlayerOverworld.cpp" />
-    <ClCompile Include="Code\CPP\PlayerParent.cpp" />
     <ClCompile Include="Code\CPP\Timer.cpp" />
     <ClCompile Include="Code\CPP\tinyxml2.cpp" />
     <ClCompile Include="Code\CPP\Title.cpp" />
@@ -102,7 +99,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Code\Headers\Button.h" />
-    <ClInclude Include="Code\Headers\Camera.h" />
     <ClInclude Include="Code\Headers\ChessPiece.h" />
     <ClInclude Include="Code\Headers\ChessPlayer.h" />
     <ClInclude Include="Code\Headers\Constants.h" />
@@ -115,8 +111,6 @@
     <ClInclude Include="Code\Headers\MenuButton.h" />
     <ClInclude Include="Code\Headers\Options.h" />
     <ClInclude Include="Code\Headers\SinglePlayer.h" />
-    <ClInclude Include="Code\Headers\PlayerOverworld.h" />
-    <ClInclude Include="Code\Headers\PlayerParent.h" />
     <ClInclude Include="Code\Headers\Timer.h" />
     <ClInclude Include="Code\Headers\tinyxml2.h" />
     <ClInclude Include="Code\Headers\Title.h" />
@@ -225,6 +219,8 @@
     <Media Include="Resources\Audio\SFX\buttonSelect.wav" />
     <Media Include="Resources\Audio\SFX\footsteps.wav" />
     <Media Include="Resources\Audio\SFX\Intro.wav" />
+    <Media Include="Resources\Audio\SFX\pieceRelease.wav" />
+    <Media Include="Resources\Audio\SFX\pieceSelect.wav" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resources\Graphics\Backgrounds\chessBackground.png" />

@@ -10,6 +10,7 @@ public:
 	ChessPiece();
 	ChessPiece(PlayerColor pColor);
 
+	void handleEvents();
 	void render();
 
 	~ChessPiece();
@@ -31,6 +32,16 @@ private:
 	const enum PieceName { KING, QUEEN, ROOK, BISHOP, KNIGHT, PAWN };
 	
 	PieceName pieceType;
+
+	//booleans for logic
+	bool mouseOver, clicked;
+
+	Mix_Chunk *pieceSelect; //piece select SFX
+	Mix_Chunk *pieceRelease; //piece release SFX
+
+	//offset of mouse relative to (0,0) coordinate of piece
+	//when the piece is selected. Used when moving pieces
+	int xOffset, yOffset;
 };
 
 #endif

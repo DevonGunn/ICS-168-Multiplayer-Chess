@@ -72,7 +72,8 @@ void SinglePlayer::handleEvents()
 	if (!paused)
 	{
 		//Going to need to iterate through data structure holding all objects which need to cycle events
-		
+		player1.handleEvents();
+		player2.handleEvents();
 	}
 }
 

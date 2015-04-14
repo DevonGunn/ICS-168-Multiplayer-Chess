@@ -90,16 +90,7 @@
     <ClCompile Include="Code\CPP\Globals.cpp">
       <Filter>Source Files\Includes</Filter>
     </ClCompile>
-    <ClCompile Include="Code\CPP\Camera.cpp">
-      <Filter>Source Files\Objects</Filter>
-    </ClCompile>
     <ClCompile Include="Code\CPP\MenuButton.cpp">
-      <Filter>Source Files\Objects</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\CPP\PlayerOverworld.cpp">
-      <Filter>Source Files\Objects</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\CPP\PlayerParent.cpp">
       <Filter>Source Files\Objects</Filter>
     </ClCompile>
     <ClCompile Include="Code\CPP\Timer.cpp">
@@ -152,16 +143,7 @@
     <ClInclude Include="Code\Headers\Button.h">
       <Filter>Header Files\Objects</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Headers\Camera.h">
-      <Filter>Header Files\Objects</Filter>
-    </ClInclude>
     <ClInclude Include="Code\Headers\MenuButton.h">
-      <Filter>Header Files\Objects</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Headers\PlayerOverworld.h">
-      <Filter>Header Files\Objects</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Headers\PlayerParent.h">
       <Filter>Header Files\Objects</Filter>
     </ClInclude>
     <ClInclude Include="Code\Headers\Timer.h">
@@ -490,6 +472,12 @@
       <Filter>Resource Files\Audio\SFX</Filter>
     </Media>
     <Media Include="Resources\Audio\SFX\Intro.wav">
+      <Filter>Resource Files\Audio\SFX</Filter>
+    </Media>
+    <Media Include="Resources\Audio\SFX\pieceRelease.wav">
+      <Filter>Resource Files\Audio\SFX</Filter>
+    </Media>
+    <Media Include="Resources\Audio\SFX\pieceSelect.wav">
       <Filter>Resource Files\Audio\SFX</Filter>
     </Media>
   </ItemGroup>

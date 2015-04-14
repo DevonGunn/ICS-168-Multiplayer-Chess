@@ -69,6 +69,93 @@ ChessPiece::ChessPiece(PlayerColor pColor)
 	//increment piece counter
 	if (pColor == BLACK) ++numBlackPieces;
 	else if (pColor == WHITE) ++numWhitePieces;
+
+	//mouse over is default set to false
+	mouseOver = clicked = false;
+
+	//load the SFX
+	pieceSelect = Mix_LoadWAV("Resources/Audio/SFX/pieceSelect.wav");
+	pieceRelease = Mix_LoadWAV("Resources/Audio/SFX/pieceRelease.wav");
+
+	//set the initial offset
+	xOffset = yOffset = 0;
+}
+
+void ChessPiece::handleEvents()
+{
+	//create ints to hold mouse coords, replace this with the more efficient method later
+	int x = 0, y = 0;
+
+	//controls mouse over
+	if (event.type == SDL_MOUSEMOTION)
+	{
+		//set x and y
+		x = event.motion.x;
+		y = event.motion.y;
+
+		//if mouse is over piece
+		if (x > position.x && x < position.x + position.w && y > position.y && y < position.y + position.h)
+		{
+			//ensure we only play the sound once per mouse hover
+			if (!mouseOver)
+			{
+				//play mouseover sound
+				//if (pieceSelect != NULL)
+					//Mix_PlayChannel(-1, pieceSelect, 0);
+			}
+
+			//tell piece the cursor is hovering on it
+			mouseOver = true;
+
+		}
+		//else set clip to mouse out
+		else
+		{
+			//tell piece cursor is no longer hovering over it
+			mouseOver = false;
+		}
+
+		//If the button has been clicked, then drag the piece and stop moving it when the click has been released
+		if (clicked)
+		{
+			position.x = x - xOffset;
+			position.y = y - yOffset;
+		}
+
+		//set the offset incase we need it
+		xOffset = x - position.x;
+		yOffset = y - position.y;
+	}
+
+	//if mouse is clicked while piece is hovered on
+	if (event.type == SDL_MOUSEBUTTONDOWN && mouseOver)
+	{
+		//play select sound!
+		if (pieceSelect != NULL)
+			Mix_PlayChannel(-1, pieceSelect, 0);
+
+		//tell piece it has been clicked
+		clicked = true;
+	}
+
+	//if mouse button is released
+	if (event.type == SDL_MOUSEBUTTONUP)
+	{
+		//if the cursor was still hovering over piece
+		if (mouseOver)
+		{
+			//play confirmation sound!
+			if (pieceRelease != NULL)
+				Mix_PlayChannel(-1, pieceRelease, 0);
+
+			clicked = false;
+		}
+		else
+		{
+			//button released while no mouse-over
+			clicked = false;
+		}
+	}
 }
 
 void ChessPiece::render()
@@ -80,4 +167,7 @@ ChessPiece::~ChessPiece()
 {
 	//free dynamic memory
 	SDL_DestroyTexture(spriteSheet);
+
+	Mix_FreeChunk(pieceSelect);
+	Mix_FreeChunk(pieceRelease);
 }
