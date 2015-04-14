@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{33548FE8-9963-4208-AB6A-D6C533F345AB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MultiplayerChess</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>\Code\Headers;\Includes\Headers;C:\Users\Flandre\Documents\Visual Studio 2013\Projects\ICS 168\Multiplayer Chess\Multiplayer Chess\Code\Headers;C:\Users\Flandre\Documents\Visual Studio 2013\Projects\ICS 168\Multiplayer Chess\Multiplayer Chess\Includes\Headers;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Flandre\Documents\Visual Studio 2013\Projects\ICS 168\Multiplayer Chess\Multiplayer Chess\Includes\Libraries;\Includes\Libraries;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;SDL2main.lib;SDL2test.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Code\CPP\Camera.cpp" />
+    <ClCompile Include="Code\CPP\ChessPiece.cpp" />
+    <ClCompile Include="Code\CPP\ChessPlayer.cpp" />
+    <ClCompile Include="Code\CPP\Credits.cpp" />
+    <ClCompile Include="Code\CPP\Functions.cpp" />
+    <ClCompile Include="Code\CPP\GeneralizedInclude.cpp" />
+    <ClCompile Include="Code\CPP\Globals.cpp" />
+    <ClCompile Include="Code\CPP\Intro.cpp" />
+    <ClCompile Include="Code\CPP\Main.cpp" />
+    <ClCompile Include="Code\CPP\MenuButton.cpp" />
+    <ClCompile Include="Code\CPP\Options.cpp" />
+    <ClCompile Include="Code\CPP\SinglePlayer.cpp" />
+    <ClCompile Include="Code\CPP\PlayerOverworld.cpp" />
+    <ClCompile Include="Code\CPP\PlayerParent.cpp" />
+    <ClCompile Include="Code\CPP\Timer.cpp" />
+    <ClCompile Include="Code\CPP\tinyxml2.cpp" />
+    <ClCompile Include="Code\CPP\Title.cpp" />
+    <ClCompile Include="Code\CPP\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\Headers\Button.h" />
+    <ClInclude Include="Code\Headers\Camera.h" />
+    <ClInclude Include="Code\Headers\ChessPiece.h" />
+    <ClInclude Include="Code\Headers\ChessPlayer.h" />
+    <ClInclude Include="Code\Headers\Constants.h" />
+    <ClInclude Include="Code\Headers\Credits.h" />
+    <ClInclude Include="Code\Headers\Functions.h" />
+    <ClInclude Include="Code\Headers\GameState.h" />
+    <ClInclude Include="Code\Headers\GeneralizedInclude.h" />
+    <ClInclude Include="Code\Headers\Globals.h" />
+    <ClInclude Include="Code\Headers\Intro.h" />
+    <ClInclude Include="Code\Headers\MenuButton.h" />
+    <ClInclude Include="Code\Headers\Options.h" />
+    <ClInclude Include="Code\Headers\SinglePlayer.h" />
+    <ClInclude Include="Code\Headers\PlayerOverworld.h" />
+    <ClInclude Include="Code\Headers\PlayerParent.h" />
+    <ClInclude Include="Code\Headers\Timer.h" />
+    <ClInclude Include="Code\Headers\tinyxml2.h" />
+    <ClInclude Include="Code\Headers\Title.h" />
+    <ClInclude Include="Code\Headers\Window.h" />
+    <ClInclude Include="Includes\Headers\begin_code.h" />
+    <ClInclude Include="Includes\Headers\close_code.h" />
+    <ClInclude Include="Includes\Headers\SDL.h" />
+    <ClInclude Include="Includes\Headers\SDL_assert.h" />
+    <ClInclude Include="Includes\Headers\SDL_atomic.h" />
+    <ClInclude Include="Includes\Headers\SDL_audio.h" />
+    <ClInclude Include="Includes\Headers\SDL_bits.h" />
+    <ClInclude Include="Includes\Headers\SDL_blendmode.h" />
+    <ClInclude Include="Includes\Headers\SDL_clipboard.h" />
+    <ClInclude Include="Includes\Headers\SDL_config.h" />
+    <ClInclude Include="Includes\Headers\SDL_cpuinfo.h" />
+    <ClInclude Include="Includes\Headers\SDL_endian.h" />
+    <ClInclude Include="Includes\Headers\SDL_error.h" />
+    <ClInclude Include="Includes\Headers\SDL_events.h" />
+    <ClInclude Include="Includes\Headers\SDL_filesystem.h" />
+    <ClInclude Include="Includes\Headers\SDL_gamecontroller.h" />
+    <ClInclude Include="Includes\Headers\SDL_gesture.h" />
+    <ClInclude Include="Includes\Headers\SDL_haptic.h" />
+    <ClInclude Include="Includes\Headers\SDL_hints.h" />
+    <ClInclude Include="Includes\Headers\SDL_image.h" />
+    <ClInclude Include="Includes\Headers\SDL_joystick.h" />
+    <ClInclude Include="Includes\Headers\SDL_keyboard.h" />
+    <ClInclude Include="Includes\Headers\SDL_keycode.h" />
+    <ClInclude Include="Includes\Headers\SDL_loadso.h" />
+    <ClInclude Include="Includes\Headers\SDL_log.h" />
+    <ClInclude Include="Includes\Headers\SDL_main.h" />
+    <ClInclude Include="Includes\Headers\SDL_messagebox.h" />
+    <ClInclude Include="Includes\Headers\SDL_mixer.h" />
+    <ClInclude Include="Includes\Headers\SDL_mouse.h" />
+    <ClInclude Include="Includes\Headers\SDL_mutex.h" />
+    <ClInclude Include="Includes\Headers\SDL_name.h" />
+    <ClInclude Include="Includes\Headers\SDL_opengl.h" />
+    <ClInclude Include="Includes\Headers\SDL_opengles.h" />
+    <ClInclude Include="Includes\Headers\SDL_opengles2.h" />
+    <ClInclude Include="Includes\Headers\SDL_pixels.h" />
+    <ClInclude Include="Includes\Headers\SDL_platform.h" />
+    <ClInclude Include="Includes\Headers\SDL_power.h" />
+    <ClInclude Include="Includes\Headers\SDL_quit.h" />
+    <ClInclude Include="Includes\Headers\SDL_rect.h" />
+    <ClInclude Include="Includes\Headers\SDL_render.h" />
+    <ClInclude Include="Includes\Headers\SDL_revision.h" />
+    <ClInclude Include="Includes\Headers\SDL_rwops.h" />
+    <ClInclude Include="Includes\Headers\SDL_scancode.h" />
+    <ClInclude Include="Includes\Headers\SDL_shape.h" />
+    <ClInclude Include="Includes\Headers\SDL_stdinc.h" />
+    <ClInclude Include="Includes\Headers\SDL_surface.h" />
+    <ClInclude Include="Includes\Headers\SDL_system.h" />
+    <ClInclude Include="Includes\Headers\SDL_syswm.h" />
+    <ClInclude Include="Includes\Headers\SDL_test.h" />
+    <ClInclude Include="Includes\Headers\SDL_test_assert.h" />
+    <ClInclude Include="Includes\Headers\SDL_test_common.h" />
+    <ClInclude Include="Includes\Headers\SDL_test_compare.h" />
+    <ClInclude Include="Includes\Headers\SDL_test_crc32.h" />
+    <ClInclude Include="Includes\Headers\SDL_test_font.h" />
+    <ClInclude Include="Includes\Headers\SDL_test_fuzzer.h" />
+    <ClInclude Include="Includes\Headers\SDL_test_harness.h" />
+    <ClInclude Include="Includes\Headers\SDL_test_images.h" />
+    <ClInclude Include="Includes\Headers\SDL_test_log.h" />
+    <ClInclude Include="Includes\Headers\SDL_test_md5.h" />
+    <ClInclude Include="Includes\Headers\SDL_test_random.h" />
+    <ClInclude Include="Includes\Headers\SDL_thread.h" />
+    <ClInclude Include="Includes\Headers\SDL_timer.h" />
+    <ClInclude Include="Includes\Headers\SDL_touch.h" />
+    <ClInclude Include="Includes\Headers\SDL_ttf.h" />
+    <ClInclude Include="Includes\Headers\SDL_types.h" />
+    <ClInclude Include="Includes\Headers\SDL_version.h" />
+    <ClInclude Include="Includes\Headers\SDL_video.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="Includes\DLL\libFLAC-8.dll" />
+    <None Include="Includes\DLL\libfreetype-6.dll" />
+    <None Include="Includes\DLL\libjpeg-9.dll" />
+    <None Include="Includes\DLL\libmikmod-2.dll" />
+    <None Include="Includes\DLL\libmodplug-1.dll" />
+    <None Include="Includes\DLL\libogg-0.dll" />
+    <None Include="Includes\DLL\libpng16-16.dll" />
+    <None Include="Includes\DLL\libtiff-5.dll" />
+    <None Include="Includes\DLL\libvorbis-0.dll" />
+    <None Include="Includes\DLL\libvorbisfile-3.dll" />
+    <None Include="Includes\DLL\libwebp-4.dll" />
+    <None Include="Includes\DLL\SDL2.dll" />
+    <None Include="Includes\DLL\SDL2_image.dll" />
+    <None Include="Includes\DLL\SDL2_mixer.dll" />
+    <None Include="Includes\DLL\SDL2_ttf.dll" />
+    <None Include="Includes\DLL\smpeg2.dll" />
+    <None Include="Includes\DLL\zlib1.dll" />
+    <None Include="Resources\Audio\Music\Credits.ogg" />
+    <None Include="Resources\Audio\Music\Overworld.ogg" />
+    <None Include="Resources\Audio\Music\Title.ogg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Includes\Libraries\SDL2.lib" />
+    <Library Include="Includes\Libraries\SDL2main.lib" />
+    <Library Include="Includes\Libraries\SDL2test.lib" />
+    <Library Include="Includes\Libraries\SDL2_image.lib" />
+    <Library Include="Includes\Libraries\SDL2_mixer.lib" />
+    <Library Include="Includes\Libraries\SDL2_ttf.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Resources\Audio\SFX\buttonHover.wav" />
+    <Media Include="Resources\Audio\SFX\buttonSelect.wav" />
+    <Media Include="Resources\Audio\SFX\footsteps.wav" />
+    <Media Include="Resources\Audio\SFX\Intro.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Graphics\Backgrounds\chessBackground.png" />
+    <Image Include="Resources\Graphics\Backgrounds\chessBoard.png" />
+    <Image Include="Resources\Graphics\Backgrounds\Credits.png" />
+    <Image Include="Resources\Graphics\Backgrounds\Intro.png" />
+    <Image Include="Resources\Graphics\Backgrounds\Options.png" />
+    <Image Include="Resources\Graphics\Backgrounds\Title.png" />
+    <Image Include="Resources\Graphics\TileSets\chessSet.png" />
+    <Image Include="Resources\Graphics\UI\GameIcon.bmp" />
+    <Image Include="Resources\Graphics\UI\GUIButtons.png" />
+    <Image Include="Resources\Graphics\UI\GUIElements.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Resources\Misc\ExocetThick.ttf" />
+    <Font Include="Resources\Misc\ExocetThin.ttf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

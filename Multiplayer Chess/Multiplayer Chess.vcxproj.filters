@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Includes">
+      <UniqueIdentifier>{2689fa16-0597-44f7-8a29-d9f5612d5efc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Includes">
+      <UniqueIdentifier>{6b138adf-c2f4-4904-9d6b-d80a41c54d3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects">
+      <UniqueIdentifier>{e8f4954f-e03c-4731-8479-439df6fd9b86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\DLL">
+      <UniqueIdentifier>{8c302ce4-0cd5-4949-8cb1-8ef1b81c7c5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Headers">
+      <UniqueIdentifier>{a824e579-7cf0-4043-8c57-c86a603ff766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Libraries">
+      <UniqueIdentifier>{93f47da6-864b-41c6-aca2-bf92f9b8c363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Audio">
+      <UniqueIdentifier>{37cfc16f-986e-4d9e-90cb-68241931eb62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Audio\Music">
+      <UniqueIdentifier>{ea3ce88e-6251-440b-8e6b-e43512a62dea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Audio\SFX">
+      <UniqueIdentifier>{65168328-7da1-4a43-9858-579a594cb74a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Graphics">
+      <UniqueIdentifier>{8951873f-64c4-4794-9750-c4d23c202a42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Graphics\Backgrounds">
+      <UniqueIdentifier>{cf4b31c9-61cb-442b-baf4-3952e9411429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Graphics\UI">
+      <UniqueIdentifier>{7f0941d5-ef53-4678-ba59-3b5d1e4ceb07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Graphics\Tile Sets">
+      <UniqueIdentifier>{ecb4d85d-798f-431d-af67-1d8637e4bc4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Maps">
+      <UniqueIdentifier>{907518cd-71c4-478d-8c03-596def7f8962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Misc">
+      <UniqueIdentifier>{8b4d115f-84f9-427c-86d8-c8e67def5558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Includes">
+      <UniqueIdentifier>{e61d97db-4967-4915-bd1c-4984fd3781e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects">
+      <UniqueIdentifier>{650a6bb4-013d-496c-9b28-12797ef3b7c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TinyXML2">
+      <UniqueIdentifier>{0bd25e14-d388-4ee6-aaed-b9b90ba53682}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\States">
+      <UniqueIdentifier>{70bff4d8-3707-443f-a09d-f1d103eeb63b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TinyXML2">
+      <UniqueIdentifier>{218d961b-49fc-4d86-9810-5e5cb5fa34d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\States">
+      <UniqueIdentifier>{6db6243e-465f-4b67-8836-b24f28218c2c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Code\CPP\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\Functions.cpp">
+      <Filter>Source Files\Includes</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\GeneralizedInclude.cpp">
+      <Filter>Source Files\Includes</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\Globals.cpp">
+      <Filter>Source Files\Includes</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\Camera.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\MenuButton.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\PlayerOverworld.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\PlayerParent.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\Timer.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\Window.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\Credits.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\Intro.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\Options.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\Title.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\tinyxml2.cpp">
+      <Filter>Source Files\TinyXML2</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\SinglePlayer.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\ChessPiece.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\ChessPlayer.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\Headers\Constants.h">
+      <Filter>Header Files\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\Functions.h">
+      <Filter>Header Files\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\GeneralizedInclude.h">
+      <Filter>Header Files\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\Globals.h">
+      <Filter>Header Files\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\tinyxml2.h">
+      <Filter>Header Files\TinyXML2</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\Button.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\Camera.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\MenuButton.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\PlayerOverworld.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\PlayerParent.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\Timer.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\Window.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\Credits.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\GameState.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\Intro.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\Options.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\Title.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\begin_code.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\close_code.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_assert.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_atomic.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_audio.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_bits.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_blendmode.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_clipboard.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_config.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_cpuinfo.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_endian.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_error.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_events.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_filesystem.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_gamecontroller.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_gesture.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_haptic.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_hints.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_image.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_joystick.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_keyboard.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_keycode.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_loadso.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_log.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_main.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_messagebox.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_mixer.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_mouse.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_mutex.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_name.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_opengl.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_opengles.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_opengles2.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_pixels.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_platform.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_power.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_quit.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_rect.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_render.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_revision.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_rwops.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_scancode.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_shape.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_stdinc.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_surface.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_system.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_syswm.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_test.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_test_assert.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_test_common.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_test_compare.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_test_crc32.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_test_font.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_test_fuzzer.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_test_harness.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_test_images.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_test_log.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_test_md5.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_test_random.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_thread.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_timer.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_touch.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_ttf.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_types.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_version.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Headers\SDL_video.h">
+      <Filter>Includes\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\SinglePlayer.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\ChessPiece.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\ChessPlayer.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Includes\DLL\libFLAC-8.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\libfreetype-6.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\libjpeg-9.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\libmikmod-2.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\libmodplug-1.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\libogg-0.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\libpng16-16.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\libtiff-5.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\libvorbis-0.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\libvorbisfile-3.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\libwebp-4.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\SDL2.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\SDL2_image.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\SDL2_mixer.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\SDL2_ttf.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\smpeg2.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Includes\DLL\zlib1.dll">
+      <Filter>Includes\DLL</Filter>
+    </None>
+    <None Include="Resources\Audio\Music\Credits.ogg">
+      <Filter>Resource Files\Audio\Music</Filter>
+    </None>
+    <None Include="Resources\Audio\Music\Overworld.ogg">
+      <Filter>Resource Files\Audio\Music</Filter>
+    </None>
+    <None Include="Resources\Audio\Music\Title.ogg">
+      <Filter>Resource Files\Audio\Music</Filter>
+    </None>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Includes\Libraries\SDL2.lib">
+      <Filter>Includes\Libraries</Filter>
+    </Library>
+    <Library Include="Includes\Libraries\SDL2_image.lib">
+      <Filter>Includes\Libraries</Filter>
+    </Library>
+    <Library Include="Includes\Libraries\SDL2_mixer.lib">
+      <Filter>Includes\Libraries</Filter>
+    </Library>
+    <Library Include="Includes\Libraries\SDL2_ttf.lib">
+      <Filter>Includes\Libraries</Filter>
+    </Library>
+    <Library Include="Includes\Libraries\SDL2main.lib">
+      <Filter>Includes\Libraries</Filter>
+    </Library>
+    <Library Include="Includes\Libraries\SDL2test.lib">
+      <Filter>Includes\Libraries</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Resources\Audio\SFX\buttonHover.wav">
+      <Filter>Resource Files\Audio\SFX</Filter>
+    </Media>
+    <Media Include="Resources\Audio\SFX\buttonSelect.wav">
+      <Filter>Resource Files\Audio\SFX</Filter>
+    </Media>
+    <Media Include="Resources\Audio\SFX\footsteps.wav">
+      <Filter>Resource Files\Audio\SFX</Filter>
+    </Media>
+    <Media Include="Resources\Audio\SFX\Intro.wav">
+      <Filter>Resource Files\Audio\SFX</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Graphics\Backgrounds\Credits.png">
+      <Filter>Resource Files\Graphics\Backgrounds</Filter>
+    </Image>
+    <Image Include="Resources\Graphics\Backgrounds\Intro.png">
+      <Filter>Resource Files\Graphics\Backgrounds</Filter>
+    </Image>
+    <Image Include="Resources\Graphics\Backgrounds\Options.png">
+      <Filter>Resource Files\Graphics\Backgrounds</Filter>
+    </Image>
+    <Image Include="Resources\Graphics\Backgrounds\Title.png">
+      <Filter>Resource Files\Graphics\Backgrounds</Filter>
+    </Image>
+    <Image Include="Resources\Graphics\UI\GameIcon.bmp">
+      <Filter>Resource Files\Graphics\UI</Filter>
+    </Image>
+    <Image Include="Resources\Graphics\UI\GUIButtons.png">
+      <Filter>Resource Files\Graphics\UI</Filter>
+    </Image>
+    <Image Include="Resources\Graphics\UI\GUIElements.JPG">
+      <Filter>Resource Files\Graphics\UI</Filter>
+    </Image>
+    <Image Include="Resources\Graphics\Backgrounds\chessBackground.png">
+      <Filter>Resource Files\Graphics\Backgrounds</Filter>
+    </Image>
+    <Image Include="Resources\Graphics\Backgrounds\chessBoard.png">
+      <Filter>Resource Files\Graphics\Backgrounds</Filter>
+    </Image>
+    <Image Include="Resources\Graphics\TileSets\chessSet.png">
+      <Filter>Resource Files\Graphics\Tile Sets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Resources\Misc\ExocetThick.ttf">
+      <Filter>Resource Files\Misc</Filter>
+    </Font>
+    <Font Include="Resources\Misc\ExocetThin.ttf">
+      <Filter>Resource Files\Misc</Filter>
+    </Font>
+  </ItemGroup>
+</Project>
