@@ -55,6 +55,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -81,15 +82,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Code\CPP\Button.cpp" />
     <ClCompile Include="Code\CPP\ChessPiece.cpp" />
     <ClCompile Include="Code\CPP\ChessPlayer.cpp" />
+    <ClCompile Include="Code\CPP\Client.cpp" />
     <ClCompile Include="Code\CPP\Credits.cpp" />
     <ClCompile Include="Code\CPP\Functions.cpp" />
     <ClCompile Include="Code\CPP\GeneralizedInclude.cpp" />
     <ClCompile Include="Code\CPP\Globals.cpp" />
     <ClCompile Include="Code\CPP\Intro.cpp" />
+    <ClCompile Include="Code\CPP\LoginButton.cpp" />
     <ClCompile Include="Code\CPP\Main.cpp" />
     <ClCompile Include="Code\CPP\MenuButton.cpp" />
+    <ClCompile Include="Code\CPP\Multiplayer.cpp" />
     <ClCompile Include="Code\CPP\Options.cpp" />
     <ClCompile Include="Code\CPP\SinglePlayer.cpp" />
     <ClCompile Include="Code\CPP\Timer.cpp" />
@@ -101,6 +106,7 @@
     <ClInclude Include="Code\Headers\Button.h" />
     <ClInclude Include="Code\Headers\ChessPiece.h" />
     <ClInclude Include="Code\Headers\ChessPlayer.h" />
+    <ClInclude Include="Code\Headers\Client.h" />
     <ClInclude Include="Code\Headers\Constants.h" />
     <ClInclude Include="Code\Headers\Credits.h" />
     <ClInclude Include="Code\Headers\Functions.h" />
@@ -108,7 +114,9 @@
     <ClInclude Include="Code\Headers\GeneralizedInclude.h" />
     <ClInclude Include="Code\Headers\Globals.h" />
     <ClInclude Include="Code\Headers\Intro.h" />
+    <ClInclude Include="Code\Headers\LoginButton.h" />
     <ClInclude Include="Code\Headers\MenuButton.h" />
+    <ClInclude Include="Code\Headers\Multiplayer.h" />
     <ClInclude Include="Code\Headers\Options.h" />
     <ClInclude Include="Code\Headers\SinglePlayer.h" />
     <ClInclude Include="Code\Headers\Timer.h" />

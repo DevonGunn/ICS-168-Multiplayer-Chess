@@ -2,7 +2,7 @@
 Devon Gunn
 #28502436
 
-"Radix" 2-D game engine. All code <C> Devon Gunn.
+"Radix" 2-D game engine. Al]l code <C> Devon Gunn.
 Please do not use, modify, or distribute without my permission.
 I can be reached at "DGunn@CredoIncorporated.com"
 **/
@@ -13,7 +13,8 @@ I can be reached at "DGunn@CredoIncorporated.com"
 #include "Intro.h"
 #include "Options.h"
 #include "SinglePlayer.h"
-#include "Title.h"
+#include "Multiplayer.h"
+#include "Title.h"]
 #include <sstream>
 #include <string>
 
@@ -156,6 +157,10 @@ void changeState()
 
 		case STATE_SINGLEPLAYER:
 			currentState = new SinglePlayer();
+			break;
+
+		case STATE_MULTIPLAYER:
+			currentState = new Multiplayer();
 			break;
 		}
 

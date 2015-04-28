@@ -26,6 +26,7 @@ public:
 	~Title(void);
 private:
 	MenuButton *singlePlayer;
+	MenuButton *multiplayer;
 	MenuButton *options;
 	MenuButton *credits;
 	MenuButton *exit;

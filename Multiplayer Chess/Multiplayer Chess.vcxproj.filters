@@ -123,6 +123,18 @@
     <ClCompile Include="Code\CPP\ChessPlayer.cpp">
       <Filter>Source Files\Objects</Filter>
     </ClCompile>
+    <ClCompile Include="Code\CPP\Multiplayer.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\Button.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\LoginButton.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CPP\Client.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Code\Headers\Constants.h">
@@ -375,6 +387,15 @@
       <Filter>Header Files\Objects</Filter>
     </ClInclude>
     <ClInclude Include="Code\Headers\ChessPlayer.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\Multiplayer.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\LoginButton.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Headers\Client.h">
       <Filter>Header Files\Objects</Filter>
     </ClInclude>
   </ItemGroup>

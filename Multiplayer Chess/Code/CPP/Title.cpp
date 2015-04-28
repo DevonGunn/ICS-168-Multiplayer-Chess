@@ -16,7 +16,8 @@ Title::Title(void)
 	exit = new MenuButton(400, 520, "Exit", STATE_EXIT);
 	credits = new MenuButton(exit->getXPos(), exit->getYPos() - exit->height(), "Credits", STATE_CREDITS);
 	options = new MenuButton(credits->getXPos(), credits->getYPos() - credits->height(), "Options", STATE_OPTIONS);
-	singlePlayer = new MenuButton(options->getXPos(), options->getYPos() - options->height(), "Singleplayer", STATE_SINGLEPLAYER);
+	multiplayer = new MenuButton(options->getXPos(), options->getYPos() - options->height(), "Multiplayer", STATE_MULTIPLAYER);
+	singlePlayer = new MenuButton(multiplayer->getXPos(), multiplayer->getYPos() - multiplayer->height(), "Singleplayer", STATE_SINGLEPLAYER);
 
 	//If music is not playing, then we load a file into the global music channel
 	if (!Mix_PlayingMusic())
@@ -35,6 +36,7 @@ void Title::handleEvents()
 			setNextState(STATE_EXIT);
 
 		singlePlayer->handleEvents();
+		multiplayer->handleEvents();
 		options->handleEvents();
 		credits->handleEvents();
 		exit->handleEvents();
@@ -49,6 +51,7 @@ void Title::render()
 	SDL_RenderCopy(renderer, backgroundTexture, NULL, NULL);
 
 	singlePlayer->render();
+	multiplayer->render();
 	options->render();
 	credits->render();
 	exit->render();
@@ -59,11 +62,13 @@ Title::~Title(void)
 	SDL_DestroyTexture(backgroundTexture);
 
 	delete singlePlayer;
+	delete multiplayer;
 	delete options;
 	delete credits;
 	delete exit;
 
 	singlePlayer = NULL;
+	multiplayer = NULL;
 	options = NULL;
 	credits = NULL;
 	exit = NULL;

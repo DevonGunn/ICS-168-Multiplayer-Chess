@@ -3,8 +3,6 @@
 
 #include "button.h"
 
-using namespace std;
-
 class MenuButton :
 	public Button
 {
@@ -18,21 +16,11 @@ public:
 	//@param GameStates - the game-state that the button will take us to when clicked
 	MenuButton(int xPosition, int yPosition, string text, GameStates state);
 
-	void handleEvents(/*SDL_Surface* &bGround/*int xPos, int yPos*/);
-
-	void render();
-
-	//width - returns the width of the button
-	//@return int - returns the width of the button
-	int width();
-
-	int height();
-
-	int getXPos();
-
-	int getYPos();
+	void handleEvents();
 
 	~MenuButton(void);
+private:
+	GameStates targetState; //The state the button will lead to when clicked
 };
 
 #endif
